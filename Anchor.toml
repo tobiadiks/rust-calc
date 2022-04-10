@@ -1,0 +1,17 @@
+[features]
+seeds = false
+[programs.localnet]
+rust_calc = "R6aXtpGVkNTnNyjo18WQ6MLq8Hv55uK53odp6hVZu1Z"
+
+[programs.devnet]
+rust_calc = "R6aXtpGVkNTnNyjo18WQ6MLq8Hv55uK53odp6hVZu1Z"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/oluwatobi/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
